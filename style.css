@@ -1,0 +1,277 @@
+@import url('fonts/font-face.css');
+* , a{
+    font-family: 'Vazir';
+}
+
+.bg{
+    background-color: #f3f2f8;
+}
+.main{
+    background-color: #fff;
+    box-shadow: 0px 0px 10px #e7e6ec;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/* sidebar */
+.right_side{
+    border-left: 3px solid #f5f5f5;
+    overflow-y: auto;
+}
+.logo{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #aa97f1;
+}
+.right_side i{
+    color: #d9dadf;
+    font-size: 1.2rem;
+    transition: all 0.3s;
+}
+.right_side a:hover i{
+    color: #af949d;
+    cursor: pointer;
+}
+.right_side a{
+    border-left: 2px solid transparent;
+    transition: all 0.3s;
+}
+.right_side a:hover{
+    border-left: 2px solid #a3a9a7;
+}
+
+/* middle */
+.middle{
+    overflow-y: auto;
+}
+.middle h1{
+    font-size: 1.6rem;
+    color: rgb(26, 26, 26);
+}
+.middle form{
+    background-color: #f8f9fb;
+    border-radius: 10px;
+    width: 200px;
+}
+input{
+    background-color: transparent;
+    color: rgb(65, 65, 65) !important;
+    font-size: 0.8rem !important;
+    border: none;
+    padding-right: 40px;
+}
+input:focus , input:active ,
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus{
+    transition: background-color 5000s ease-in-out 0s !important;
+    -webkit-box-shadow: 0 0 0px 1000px #000 inset !important;
+    -webkit-text-fill-color: rgb(65, 65, 65)!important;
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+
+}
+input::placeholder {
+    font-size: 0.8rem !important;
+    color:#d4d4d4;
+}
+.fa-search{
+    right: 13px;
+    top: 6px;
+    color: #d4d4d4;
+    z-index: 3;
+    font-size: 0.9rem;
+    transform: scaleX(-1);
+}
+
+.card1 , .card3{
+    background-color: #fff;
+    box-shadow: 0px 5px 20px #ececec;
+    border-radius: 5px;
+}
+.title h3, .title h3{
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+.title i, .title i{
+    color: #d9dadf;
+    font-size: 1rem;
+}
+.card1 li{
+    list-style-type: none;
+}
+.card1 li a{
+    text-decoration: none;
+    color:#c5c6c9 ;
+    transition: all 0.3s;
+}
+.card1 li a:hover{
+    color:#af949d;
+    cursor: pointer;
+}
+.p_bar h4{
+    font-size: 0.6rem;
+}
+.p_bar p{
+    font-size: 0.6rem;
+}
+.progress{
+    height: 0.2rem !important;
+}
+.card2{
+    border-radius: 5px !important;
+    padding: 12px;
+}
+.card2 h3{
+    font-size: 1.2rem;
+}
+.card2 i{
+    font-size: 0.7rem;
+}
+.card2 p{
+    font-size: 0.6rem;
+}
+.card2_1{
+    background: linear-gradient(#f7a18a,#f7797a);
+    box-shadow: 0 0 2px #bb747c;
+}
+.card2_2{
+    background: linear-gradient(#f9d162,#f9b93b);
+    box-shadow: 0 0 2px #d4ac57;
+}
+.card2_3{
+    background: linear-gradient(#c3b2f8,#6983e4);
+    box-shadow: 0 0 2px #566ac1;
+}
+.chart p{
+     color: rgb(158, 158, 158) !important;
+     font-size: 0.7rem;
+}
+.chart h3{
+     font-size: 0.7rem;
+}
+.invoice p{
+     color: rgb(158, 158, 158) !important;
+     font-size: 0.5rem;
+}
+.invoice h4 , .invoice span{
+     font-size: 0.6rem;
+}
+.invoice .position-absolute{
+    top: 6px;
+    left: 6px;
+}
+.card3 i{
+    font-size: 0.8rem !important;
+}
+.invoice1{
+    background-color: #fdf6ee;
+    color: #c2afa8;
+    width:  30px;
+    height: 30px;
+    border-radius: 5px;
+}
+.invoice2{
+    background-color: #eef1f8;
+    color: #9ba1b1;
+    width:  30px;
+    height: 30px;
+    border-radius: 5px;
+}
+/* left-side */
+.left_side{
+    background-color: #fafbff;
+    overflow: auto;
+}
+ .profile_img{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+}
+ .profile_img2{
+    border-radius: 50%;
+    width: 40px !important;
+    height: 40px !important;
+    overflow: hidden;
+}
+.profile span{
+    top: -10px;
+    left: -5px;
+    border-radius: 50%;
+    font-size: 0.6rem;
+}
+.profile i{
+    color: #d9dadf;
+    font-size: 1.2rem;
+}
+.left_side .info{
+    background-color:#eef5fb ;
+    border-radius: 5px;
+    box-shadow: 0 0 2px rgb(202, 209, 214);
+}
+.left_side .info h4{
+    color: #64738a;
+    font-size: 1rem;
+}
+.left_side .info p{
+    color: #a3a3a3 !important;
+    font-size: 0.6rem !important;
+}
+.schedule p{
+    font-size: 0.7rem;
+    color: rgb(59, 59, 59);
+}
+.schedule span{
+    font-size: 0.6rem;
+    color: #64738a;
+}
+.schedule h5{
+    font-size: 0.5rem;
+    color: #64738a;
+}
+.schedule i{
+    font-size: 1.2rem;
+}
+.message h5 , .message p{
+    font-size: 0.6rem;
+    color: rgb(99, 99, 99);
+}
+.message span{
+    font-size: 0.5rem;
+    color: rgb(134, 134, 134);
+}
+/* slick */
+.slider {
+    width: 50%;
+    margin: 100px auto;
+}
+
+.slick-slide {
+  margin: 0px 10px;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+
+.slick-slide {
+  transition: all ease-in-out .3s;
+  opacity: .2;
+}
+
+.slick-active {
+  opacity: .5;
+}
+
+.slick-current {
+  opacity: 1;
+}

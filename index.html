@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fonts-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+    <link rel="stylesheet" href="style.css">
+    <title>dashboard</title>
+</head>
+<body >
+    <div class="bg fixed-top fixed-bottom px-5 py-4">
+        <div class="main d-flex flex-column flex-md-row justify-content-center h-100 mx-0 mx-md-3">
+
+            <!-- right side -->
+            <div class="right_side col-12 col-md-1 d-flex flex-column justify-content-between align-items-center py-4 px-0">
+                <div class="logo d-flex align-items-center justify-content-center mb-3">
+                    <span class="font-weight-bold text-white py-2">p</span>
+                </div>
+                <div class="w-100">
+                    <ul class="nav flex-column p-0">
+                        <li class="nav-item py-3">
+                          <a class="nav-link active text-center p-0" href="#"><i class="fa fa-dashboard"></i></a>
+                        </li>
+                        <li class="nav-item py-3">
+                          <a class="nav-link text-center p-0" href="#"><i class="fa fa-list-alt"></i></a>
+                        </li>
+                        <li class="nav-item py-3">
+                          <a class="nav-link text-center p-0" href="#"><i class="fa fa-podcast"></i></a>
+                        </li>
+                        <li class="nav-item py-3">
+                          <a class="nav-link text-center p-0" href="#"><i class="fa fa-shopping-cart"></i></a>
+                        </li>
+                        <li class="nav-item py-3">
+                          <a class="nav-link text-center p-0" href="#"><i class="fa fa-user"></i></a>
+                        </li>
+                        <li class="nav-item py-3">
+                          <a class="nav-link text-center p-0" href="#"><i class="fa fa-envelope-o"></i></a>
+                        </li>
+                      </ul>
+                </div>
+                <div class="pt-3 w-100 text-center"><a><i class="ion ion-android-settings"></i></a></div>
+            </div>
+            <!-- end of right side -->
+
+            <!-- middle part -->
+            <div class="middle col-12 col-md-7 d-flex flex-column my-4 px-4">
+                <!-- search form -->
+                <div class="d-flex flex-column flex-md-row justify-content-between align-items-center px-2 mb-3">
+                    <h1>داشبورد</h1>
+                    <form class="position-relative py-1 mx-1" >
+                        <input type="text"  onfocus="this.placeholder=''" onblur="this.placeholder='جستجو کنید...'" name="search" placeholder="جستجو کنید..." class="search w-100">
+                        <i class="fa fa-search position-absolute"></i>
+                    </form>
+                </div>
+                <!-- end of search form -->
+                <div class="d-flex flex-column flex-md-row">
+                    <!-- progress bar -->
+                    <div class="col-12 col-md-8">
+                        <div class="card1 d-flex flex-column p-3 h-100 w-100">
+                            <div class="title d-flex justify-content-between">
+                                <h3 class="mb-2">پیشرفت پروژه</h3>
+                                <i class="ion ion-information-circled"></i>
+                            </div>
+                            <div class="p_bar d-flex flex-column align-items-start mt-2">
+                                <h4 class="mb-1">نمودار پیشرفت 1</h4>
+                                <div class="d-flex w-100">
+                                    <div class="col-10 p-0 pt-1">
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="70"
+                                            aria-valuemin="0" aria-valuemax="100" style="width:70% ">
+                                            <span class="sr-only">70% Complete</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-2 p-0">
+                                        <p class="mb-0 text-info">40%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p_bar d-flex flex-column align-items-start mt-2">
+                                <h4 class="mb-1">نمودار پیشرفت 2</h4>
+                                <div class="d-flex w-100">
+                                    <div class="col-10 p-0 pt-1">
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="70"
+                                            aria-valuemin="0" aria-valuemax="100" style="width:40% ">
+                                            <span class="sr-only">70% Complete</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-2 p-0">
+                                        <p class="mb-0 text-danger">40%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p_bar d-flex flex-column align-items-start mt-2">
+                                <h4 class="mb-1">  طراحی وب سایت</h4>
+                                <div class="d-flex w-100">
+                                    <div class="col-10 p-0 pt-1">
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="70"
+                                            aria-valuemin="0" aria-valuemax="100" style="width:90% ">
+                                            <span class="sr-only">70% Complete</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-2 p-0">
+                                        <p class="mb-0 text-info">90%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p_bar d-flex flex-column align-items-start mt-2">
+                                <h4 class="mb-1"> فروش</h4>
+                                <div class="d-flex w-100">
+                                    <div class="col-10 p-0 pt-1">
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="70"
+                                            aria-valuemin="0" aria-valuemax="100" style="width:10% ">
+                                            <span class="sr-only">70% Complete</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-2 p-0">
+                                        <p class="mb-0 text-danger">10%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of progress bar -->
+                    <!-- statistics -->
+                    <div class="col-12 col-md-4 d-flex flex-column p-0 h-100">
+                        <div class="d-flex w-100 mb-2">
+                            <div class="col-12 col-md-6 pl-2">
+                                <div class="card2 card2_1 d-flex flex-column justify-content-between text-white h-100">
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <h3 class="mb-0">40</h3>
+                                        <i class="fa fa-user pb-1"></i>
+                                    </div>
+                                    <p class="m-0 text-right">تعداد کاربران</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 pr-2">
+                                <div class="card2 card2_2 d-flex flex-column justify-content-between text-white h-100">
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <h3 class="mb-0">40</h3>
+                                        <i class="ion ion-stats-bars pb-1"></i>
+                                    </div>
+                                    <p class="m-0 text-right">تعداد محصولات</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex h-100 w-100 mt-2">
+                            <div class="col-12">
+                                 <div class="card2 card2_3 h-100"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of statistics -->
+
+                </div>
+
+                <!-- chart -->
+                <div class="row mt-4 px-4">
+                    <div class="card1 w-100 p-3 mx-1">
+                        <div class="title d-flex justify-content-between">
+                            <h3 class="mb-0">درآمد</h3>
+                            <ul class="d-flex">
+                                <li class="px-2"><a>6 ماه</a></li>
+                                <li class="px-2"><a>1 سال</a></li>
+                                <li class="px-2"><a>سالانه</a></li>
+                            </ul>
+                            <i class="ion ion-information-circled"></i>
+                        </div>
+                        <div class="chart d-flex">
+                            <div class="col-2 d-flex flex-column align-items-center justify-content-center pr-0">
+                                <div class="d-flex flex-column align-items-start">
+                                    <h3 class="font-weight-bold">9000000 تومان</h3>
+                                    <p>مجموع</p>
+                                </div>
+                                <div class="d-flex flex-column align-items-start">
+                                    <h3 class="font-weight-bold">20000 تومان</h3>
+                                    <p>ماه جاری</p>
+                                </div>
+                            </div>
+                            <div class="col-10 pl-0">
+                                <canvas id="myChart" height="100px" ></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of chart -->
+
+                <!-- invoice -->
+                <div class="invoice row mt-4 px-4">
+                    <div class="title d-flex justify-content-between w-100 mb-3">
+                        <h3 class="mb-2">صورتحساب</h3>
+                        <i class="ion ion-information-circled"></i>
+                    </div>
+                    <div class="d-flex flex-wrap w-100 mb-4">
+                        <div class="col-12 col-md-4">
+                            <div class="card3 d-flex p-3 position-relative">
+                                <div class="invoice1 d-flex align-items-center justify-content-center">
+                                    <span>PL</span>
+                                </div>
+                                <div class="d-flex flex-column align-items-start justify-content-center mr-3">
+                                    <h4 class="font-weight-bold mb-1">90000 تومان</h4>
+                                    <p class="mb-0">صورتحساب اول</p>
+                                </div>
+                                <div class="position-absolute">
+                                    <i class="ion ion-information-circled text-danger"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card3 d-flex p-3 position-relative">
+                                <div class="invoice2 d-flex align-items-center justify-content-center">
+                                    <span>SQ</span>
+                                </div>
+                                <div class="d-flex flex-column align-items-start justify-content-center mr-3">
+                                    <h4 class="font-weight-bold mb-1">20000 تومان</h4>
+                                    <p class="mb-0">صورتحساب دوم</p>
+                                </div>
+                                <div class="position-absolute">
+                                    <i class="ion ion-information-circled text-danger"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card3 d-flex p-3 position-relative">
+                                <div class="invoice2 d-flex align-items-center justify-content-center">
+                                    <span>PL</span>
+                                </div>
+                                <div class="d-flex flex-column align-items-start justify-content-center mr-3">
+                                    <h4 class="font-weight-bold mb-1">10000 تومان</h4>
+                                    <p class="mb-0">صورتحساب سوم</p>
+                                </div>
+                                <div class="position-absolute">
+                                    <i class="ion ion-information-circled text-danger"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of invoice -->
+            </div>
+            <!-- end of middle -->
+            
+            <!-- left-side -->
+            <div class="left_side col-12 col-md-4 d-flex flex-column">
+                <!-- profile -->
+                <div class=" profile d-flex justify-content-between align-items-center p-4">
+                    <div class="d-flex align-items-center">
+                        <div class="profile_img"><img src="./img/profile.jpg" alt="" class="w-100"></div>
+                        <p class="mb-0 mr-3 font-weight-bold">نام و نام خانوادگی</p>
+                    </div>
+                    <div class="position-relative">
+                        <i class="fa fa-envelope-o"></i>
+                        <span class="badge badge-danger position-absolute">4</span>
+                    </div>
+                </div>
+                <div class="info d-flex mx-4">
+                    <div class="col-7 p-0">
+                        <div class="p-3 d-flex flex-column align-items-start">
+                            <h4 class="mb-1 font-weight-bold">65%</h4>
+                            <p class="mb-0 font-weight-bold">پیام های خوانده نشده</p>
+                        </div>
+                    </div>
+                    <div class="col-5 p-0 bg-white rounded">
+                        <div class="p-3 d-flex flex-column align-items-end">
+                            <h4 class="mb-1 font-weight-bold text-danger">35%</h4>
+                            <p class="mb-0 font-weight-bold">فضا آزاد</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of profile -->
+
+                <!-- task schedule -->
+                <div class="d-flex flex-column py-4">
+                    <div class="title d-flex justify-content-between mx-3 mb-3">
+                        <h3 class="mb-2">برنامه کاری</h3>
+                        <i class="ion ion-information-circled"></i>
+                    </div>
+                    <section class="schedule center slider w-100 mt-0" dir="ltr">
+                        <!-- <div class="col-12 col-md-6"> -->
+                            <div class="d-flex flex-column px-2 py-3 card1 align-items-start" dir="rtl">
+                                <p class="text-right font-weight-bold mb-4">لورم ایپسوم یا طرح‌نمای: Lorem ipsum) به متنی آزمایشی و بی‌معنی در صنعت چاپ</p>
+                                <span class="font-weight-bold mb-2">7 اردیبهشت 99</span>
+                                <span class="font-weight-bold mb-3">13:30 عصر</span>
+                                <div class="d-flex align-items-center text-danger">
+                                    <i class="ion ion-stats-bars ml-2"></i>
+                                    <h5 class="mb-0 text-danger">توضیحات</h4>
+                                </div>
+                            </div>
+                        <!-- </div> -->
+                        <!-- <div class="col-12 col-md-6"> -->
+                            <div class="d-flex flex-column px-2 py-3 card1 align-items-start" dir="rtl">
+                                <p class="text-right font-weight-bold mb-4">لورم ایپسوم یا طرح‌نمای: Lorem ipsum) به متنی آزمایشی و بی‌معنی در صنعت چاپ</p>
+                                <span class="font-weight-bold mb-2">7 اردیبهشت 99</span>
+                                <span class="font-weight-bold mb-3">13:30 عصر</span>
+                                <div class="d-flex align-items-center text-info">
+                                    <i class="ion ion-stats-bars ml-2"></i>
+                                    <h5 class="mb-0 text-info">توضیحات</h4>
+                                </div>
+                            </div>
+                        <!-- </div> -->
+                        <!-- <div class="col-12 col-md-6"> -->
+                            <div class="d-flex flex-column px-2 py-3 card1 align-items-start" dir="rtl">
+                                <p class="text-right font-weight-bold mb-4">لورم ایپسوم یا طرح‌نمای: Lorem ipsum) به متنی آزمایشی و بی‌معنی در صنعت چاپ</p>
+                                <span class="font-weight-bold mb-2">7 اردیبهشت 99</span>
+                                <span class="font-weight-bold mb-3">13:30 عصر</span>
+                                <div class="d-flex align-items-center text-info">
+                                    <i class="ion ion-stats-bars ml-2"></i>
+                                    <h5 class="mb-0 text-info">توضیحات</h4>
+                                </div>
+                            </div>
+                        <!-- </div> -->
+                    </section>
+                </div>
+                <!-- end of task schedule -->
+
+                <!-- messages -->
+                    <!-- <div class="message d-flex flex-column "> -->
+                        <div class="title d-flex justify-content-between mx-4">
+                            <h3 class="mb-2">پیام ها</h3>
+                            <i class="ion ion-information-circled"></i>
+                        </div>
+                        <section class="message vertical-center-3 slider w-100 mt-0" dir="ltr">
+                            <div class="d-flex align-items-start card1 p-3 mt-3 " dir="rtl">
+                                <div class="col-2 p-0 profile_img2 ml-3">
+                                    <img src="./img/profile.jpg" alt="" class="w-100">
+                                </div>
+                                <div class="col p-0 d-flex flex-column align-items-start">
+                                    <h5 class="font-weight-bold">نام و نام خانوادگی</h5>
+                                    <p class="text-right mb-2">به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود طرح</p>
+                                    <span>2 روز پیش</span>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-start card1 p-3 mt-3 " dir="rtl">
+                                <div class="col-2 p-0 profile_img2 ml-3">
+                                    <img src="./img/profile.jpg" alt="" class="w-100">
+                                </div>
+                                <div class="col p-0 d-flex flex-column align-items-start">
+                                    <h5 class="font-weight-bold">نام و نام خانوادگی</h5>
+                                    <p class="text-right mb-2">به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود طرح</p>
+                                    <span>2 روز پیش</span>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-start card1 p-3 mt-3 " dir="rtl">
+                                <div class="col-2 p-0 profile_img2 ml-3">
+                                    <img src="./img/profile.jpg" alt="" class="w-100">
+                                </div>
+                                <div class="col p-0 d-flex flex-column align-items-start">
+                                    <h5 class="font-weight-bold">نام و نام خانوادگی</h5>
+                                    <p class="text-right mb-2">به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود طرح</p>
+                                    <span>2 روز پیش</span>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-start card1 p-3 mt-3 " dir="rtl">
+                                <div class="col-2 p-0 profile_img2 ml-3">
+                                    <img src="./img/profile.jpg" alt="" class="w-100">
+                                </div>
+                                <div class="col p-0 d-flex flex-column align-items-start">
+                                    <h5 class="font-weight-bold">نام و نام خانوادگی</h5>
+                                    <p class="text-right mb-2">به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود طرح</p>
+                                    <span>2 روز پیش</span>
+                                </div>
+                            </div>
+                         </section>
+                    <!-- </div> -->
+                <!-- end of messages -->
+            </div>
+            <!-- end of left side -->
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="./bootstrap/js/popper.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script src="./bootstrap/js/Chart.min.js"></script>
+    <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+         $(document).on('ready', function() {
+      $(".vertical-center-4").slick({
+        dots: true,
+        vertical: true,
+        centerMode: true,
+        slidesToShow: 4,
+        slidesToScroll: 2
+      });
+      $(".vertical-center-3").slick({
+        dots: true,
+        vertical: true,
+        prevArrow: false,
+        nextArrow: false,
+        slidesToShow: 3,
+        slidesToScroll: 3
+      });
+      $(".vertical-center-2").slick({
+        dots: true,
+        vertical: true,
+        centerMode: true,
+        slidesToShow: 2,
+        slidesToScroll: 2
+      });
+      $(".vertical-center").slick({
+        dots: true,
+        vertical: true,
+        centerMode: true,
+      });
+      $(".vertical").slick({
+        dots: true,
+        vertical: true,
+        slidesToShow: 3,
+        slidesToScroll: 3
+      });
+      $(".regular").slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+         prevArrow: false,
+        nextArrow: false,
+      });
+      $(".center").slick({
+        dots: true,
+        infinite: true,
+        centerMode: true,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        prevArrow: false,
+        nextArrow: false,
+      });
+      $(".variable").slick({
+        dots: true,
+        infinite: true,
+        variableWidth: true
+      });
+      $(".lazy").slick({
+        lazyLoad: 'ondemand', // ondemand progressive anticipated
+        infinite: true
+      });
+    });
+// chart
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['فروردین', 'اردیبهشت', 'خرداد', 'تیر', 'مرداد','شهریور'],
+                datasets: [{
+                    label: ' نمودار فروش 6 ماه',
+                    data: [12, 10, 3, 5, 2, 3],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+        });
+    </script>
+</body>
+</html>
