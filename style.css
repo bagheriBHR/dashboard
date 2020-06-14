@@ -193,8 +193,8 @@ input::placeholder {
 }
  .profile_img2{
     border-radius: 50%;
-    width: 40px !important;
-    height: 40px !important;
+    width: 30px !important;
+    height: 30px !important;
     overflow: hidden;
 }
 .profile span{
