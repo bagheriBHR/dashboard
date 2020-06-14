@@ -12,7 +12,7 @@
     <title>dashboard</title>
 </head>
 <body >
-    <div class="bg fixed-top fixed-bottom px-5 py-4">
+    <div class="bg px-5 py-4">
         <div class="main d-flex flex-column flex-md-row justify-content-center h-100 mx-0 mx-md-3">
 
             <!-- right side -->
@@ -434,6 +434,26 @@
         slidesToScroll: 2,
         prevArrow: false,
         nextArrow: false,
+        responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '40px',
+                            slidesToShow: 3
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '40px',
+                            slidesToShow: 1
+                        }
+                    }
+                ]
       });
       $(".variable").slick({
         dots: true,

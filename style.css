@@ -12,6 +12,14 @@
     border-radius: 20px;
     overflow: hidden;
 }
+@media (min-width: 767px) {
+    .bg{
+        position: fixed;
+        width: 100%;
+        bottom: 0px;
+        top: 0px;
+    }
+}
 
 /* sidebar */
 .right_side{
