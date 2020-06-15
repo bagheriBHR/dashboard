@@ -37,8 +37,9 @@
     font-size: 1rem;
     background-color: #5c62b8;
     transition: all 0.3s;
-    width: 100%;
+    width: 150px;
     padding: 5px 0px;
+    margin-right: auto;
 }
 .btn-form:hover{
     background-color: #797ece;
