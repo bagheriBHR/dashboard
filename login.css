@@ -1,0 +1,105 @@
+@import url('fonts/font-face.css');
+* , a{
+    font-family: 'Vazir';
+}
+.main{
+    min-height: 100vh;
+    background-color: #f3f2f8;
+}
+.login-card{
+    box-shadow:0 5px 5px rgb(216, 216, 216) ;
+    border-radius: 5px;
+    background: rgba(255,255,255,1);
+    border-top: 3px solid rgb(189, 189, 189);
+}
+.login-card h4{
+    font-size: 1.2rem;
+    color: #5c62b8;
+}
+.login-card .position-absolute{
+    top: -50px;
+    left: 41%;
+    border-radius: 50%;
+    background-color: #5c62b8;
+    box-shadow:0 5px 5px rgb(206, 206, 206) ;
+    width: 100px;
+    height: 100px;
+}
+.login-card .position-absolute i{
+    font-size: 5rem;
+    color: rgba(255, 255, 255,0.7);
+}
+.form-group i{
+    font-size: 1.3rem;
+  }
+.btn-form{
+    color: rgba(255, 255, 255, 0.9)!important;
+    font-size: 1rem;
+    background-color: #5c62b8;
+    transition: all 0.3s;
+    width: 100%;
+    padding: 5px 0px;
+}
+.btn-form:hover{
+    background-color: #797ece;
+}
+.forget{
+    transition: all 0.3s;
+}
+.forget:hover{
+    cursor: pointer;
+    color: #64738a !important;
+}
+/* checkbox */
+.boxes {
+    margin: auto;
+    padding: 20px;
+    background: #f7eef3;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+  }
+  
+  /*Checkboxes styles*/
+  input[type="checkbox"] { display: none; }
+  
+  input[type="checkbox"] + label {
+    display: block;
+    position: relative;
+    padding-right: 35px;
+    margin-bottom: 20px;
+    color: rgb(95, 95, 95);
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+  }
+  
+  input[type="checkbox"] + label:last-child { margin-bottom: 0; }
+  
+  input[type="checkbox"] + label:after {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #2e2e2e;
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: .6;
+    -webkit-transition: all .12s, border-color .08s;
+    transition: all .12s, border-color .08s;
+  }
+  
+  input[type="checkbox"]:checked + label:after {
+    width: 10px;
+    top: -5px;
+    left: 5px;
+    border-radius: 0;
+    opacity: 1;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }

@@ -33,20 +33,31 @@
     background-color: #aa97f1;
 }
 .right_side i{
-    color: #d9dadf;
-    font-size: 1.2rem;
+    color: #cfcfcf;
+    font-size: 1.4rem;
     transition: all 0.3s;
 }
-.right_side a:hover i{
+.right_side li a{
+    color: #cfcfcf;
+    font-size: 0.9rem;
+    transition: all 0.3s;
+}
+.right_side a:hover, .right_side a:hover i{
     color: #af949d;
     cursor: pointer;
 }
-.right_side a{
+.right_side li , .setting{
     border-left: 2px solid transparent;
     transition: all 0.3s;
 }
-.right_side a:hover{
+.right_side li:hover , .setting:hover{
     border-left: 2px solid #a3a9a7;
+}
+.navbar-light .navbar-toggler{
+    margin: 0 auto;
+}
+.navbar-light .navbar-toggler:focus{
+    outline: none !important;
 }
 
 /* middle */
@@ -96,7 +107,7 @@ input::placeholder {
 
 .card1 , .card3{
     background-color: #fff;
-    box-shadow: 0px 5px 20px #ececec;
+    box-shadow: 0px 2px 10px #b6b6b6;
     border-radius: 5px;
 }
 .title h3, .title h3{
@@ -136,7 +147,7 @@ input::placeholder {
     font-size: 1.2rem;
 }
 .card2 i{
-    font-size: 0.7rem;
+    font-size: 1.2rem;
 }
 .card2 p{
     font-size: 0.6rem;
@@ -286,6 +297,10 @@ input::placeholder {
 .slick-current {
   opacity: 1;
 }
+
+/* .slick-track{
+    width: 100% !important;
+} */
 /* scroll bar */
 /* width */
 ::-webkit-scrollbar {
@@ -306,3 +321,21 @@ input::placeholder {
   ::-webkit-scrollbar-thumb:hover {
     background: rgb(168, 168, 168); 
   }
+
+  /* profile-mobile */
+  .profile-mobile button:focus{
+      box-shadow: none;
+  }
+  .btntitle{
+    color: rgb(255, 255, 255) !important;
+    font-size: 0.8rem;
+    background-color: #b093ed;
+    border-radius: 5px;
+}
+.btntitle:hover{
+    color: #fff;
+    cursor: pointer;
+    text-decoration: underline !important;
+}
+
+  
