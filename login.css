@@ -18,7 +18,9 @@
 }
 .login-card .position-absolute{
     top: -50px;
-    left: 39%;
+    left: 0;
+}
+.login-card .img_card{
     border-radius: 50%;
     background-color: #98165d;
     box-shadow:0 5px 5px rgb(206, 206, 206) ;
@@ -40,6 +42,7 @@
     width: 100%;
     padding: 5px 0px;
     margin-right: auto;
+    border-radius: 3px;
 }
 .btn-form:hover{
     background-color: rgba(152,22,93,0.9);
@@ -59,7 +62,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    border-radius: 5px;
+    border-radius: 3px;
   }
   
   /*Checkboxes styles*/
