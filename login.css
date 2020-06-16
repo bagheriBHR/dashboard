@@ -14,13 +14,13 @@
 }
 .login-card h4{
     font-size: 1.2rem;
-    color: #5c62b8;
+    color: #98165d;
 }
 .login-card .position-absolute{
     top: -50px;
-    left: 41%;
+    left: 39%;
     border-radius: 50%;
-    background-color: #5c62b8;
+    background-color: #98165d;
     box-shadow:0 5px 5px rgb(206, 206, 206) ;
     width: 100px;
     height: 100px;
@@ -35,27 +35,27 @@
 .btn-form{
     color: rgba(255, 255, 255, 0.9)!important;
     font-size: 1rem;
-    background-color: #5c62b8;
+    background-color: #98165d;
     transition: all 0.3s;
-    width: 150px;
+    width: 100%;
     padding: 5px 0px;
     margin-right: auto;
 }
 .btn-form:hover{
-    background-color: #797ece;
+    background-color: #c41d79;
 }
 .forget{
     transition: all 0.3s;
 }
 .forget:hover{
     cursor: pointer;
-    color: #64738a !important;
+    color: #ac8c00 !important;
 }
 /* checkbox */
 .boxes {
     margin: auto;
-    padding: 20px;
-    background: #f7eef3;
+    padding: 10px;
+    background: #f3f2f8;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -104,3 +104,4 @@
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
   }
+ 

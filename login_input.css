@@ -6,10 +6,10 @@
   --input-border-focus: #a1a3d4;
   --group-color: var(--input-color);
   --group-border: var(--input-border);
-  --group-background: #e1e0f2;
-  --group-color-focus: #fff;
+  --group-background: #f3f2f8;
+  --group-color-focus: #8893aa;
   --group-border-focus: var(--input-border-focus);
-  --group-background-focus: #a1a3d4;
+  --group-background-focus: #f3f2f8;
 }
 
 .form-field {
@@ -17,7 +17,7 @@
   width: 100%;
   padding: 5px;
   line-height: 25px;
-  font-size: 14px;
+  font-size: 0.8rem;
   font-weight: 500;
   font-family: inherit;
   border-radius: 6px;
@@ -97,7 +97,7 @@
 
 .form-group > span {
   text-align: center;
-  padding: 10px 0px;
+  padding: 5px 0px;
   width: 50px;
   font-size: 14px;
   line-height: 25px;
