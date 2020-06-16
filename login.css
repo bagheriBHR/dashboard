@@ -42,7 +42,7 @@
     margin-right: auto;
 }
 .btn-form:hover{
-    background-color: #c41d79;
+    background-color: rgba(152,22,93,0.9);
 }
 .forget{
     transition: all 0.3s;
