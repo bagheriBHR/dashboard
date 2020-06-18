@@ -131,24 +131,306 @@ html {
           box-sizing: inherit;
 }
 
-body {
-  min-height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+.icon_select_mate {
+  position: absolute;
+  top: 5px;
+  left: 2%;
+  font-size: 16px;
+  height: 22px;
+  -webkit-transition: all 275ms;
+  transition: all 275ms;
 }
 
-body .form-group:not(:last-child) {
-  margin-bottom: 32px;
+.select_mate {
+  position: relative;
+  margin-bottom: 20px;
+  width: 100%;
+  color: #414141;
+  font-weight: 300;
+  background-color: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 375ms ease-in-out;
+  transition: all 375ms ease-in-out;
+  /* Oculto el elemento select */
+}
+
+.select_mate select {
+  position: absolute;
+  overflow: hidden;
+  height: 0px;
+  opacity: 0;
+  z-index: -1;
+}
+
+.cont_list_select_mate {
+  position: relative;
+  float: left;
+  width: 100%;
+}
+
+.cont_select_int {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 999;
+  overflow: hidden;
+  height: 0px;
+  width: 100%;
+  background-color: #fff;
+  padding: 0px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  border-radius: 0px 0px 3px 3px;
+  -webkit-box-shadow: 1px 4px 10px -2px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 4px 10px -2px rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 375ms ease-in-out;
+  transition: all 375ms ease-in-out;
+}
+
+.cont_select_int li {
+  position: relative;
+  float: left;
+  width: 100%;
+  border-bottom: 1px solid #E0E0E0;
+  background-color: rgba(152, 22, 93, 0.1);
+  list-style-type: none;
+  padding: 10px 2%;
+  margin: 0px;
+  -webkit-transition: all 275ms ease-in-out;
+  transition: all 275ms ease-in-out;
+  display: block;
+  text-align: right;
+  cursor: pointer;
+}
+
+.cont_select_int li:last-child {
+  border-radius: 3px;
+  border-bottom: 0px;
+}
+
+.cont_select_int li:hover {
+  background-color: rgba(152, 22, 93, 0.2);
+}
+
+.cont_select_int .active {
+  background-color: rgba(152, 22, 93, 0.2);
+}
+
+/* etiqueta <p> con la opcion selecionada  */
+.selecionado_opcion {
+  padding: 5px 35px 5px 0;
+  width: 96%;
+  display: block;
+  margin: 0px;
+  cursor: pointer;
+  text-align: right;
+}
+
+.radio {
+  margin: 16px 0;
+  display: block;
+  margin: 0 10px;
+  cursor: pointer;
+  padding: 5px 0px;
+}
+
+.radio input {
+  display: none;
+}
+
+.radio input + span {
+  line-height: 12px;
+  height: 12px;
+  padding-right: 22px;
+  display: block;
+  position: relative;
+}
+
+.radio input + span:not(:empty) {
+  padding-left: 20px;
+}
+
+.radio input + span:before, .radio input + span:after {
+  content: '';
+  width: 12px;
+  height: 12px;
+  display: block;
+  border-radius: 50%;
+  right: 0;
+  top: 0;
+  position: absolute;
+}
+
+.radio input + span:before {
+  background: #757575;
+  -webkit-transition: background 0.2s ease, -webkit-transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 2);
+  transition: background 0.2s ease, -webkit-transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 2);
+  transition: background 0.2s ease, transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 2);
+  transition: background 0.2s ease, transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 2), -webkit-transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 2);
+}
+
+.radio input + span:after {
+  background: #fff;
+  -webkit-transform: scale(0.78);
+          transform: scale(0.78);
+  -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.4);
+  transition: -webkit-transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.4);
+  transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.4);
+  transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.4), -webkit-transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.4);
+}
+
+.radio input:checked + span:before {
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
+  background: rgba(152, 22, 93, 0.8);
+}
+
+.radio input:checked + span:after {
+  -webkit-transform: scale(0.4);
+          transform: scale(0.4);
+  -webkit-transition: -webkit-transform .3s ease;
+  transition: -webkit-transform .3s ease;
+  transition: transform .3s ease;
+  transition: transform .3s ease, -webkit-transform .3s ease;
+}
+
+.radio:hover input + span:before {
+  -webkit-transform: scale(0.92);
+          transform: scale(0.92);
+}
+
+.radio:hover input + span:after {
+  -webkit-transform: scale(0.74);
+          transform: scale(0.74);
+}
+
+.radio:hover input:checked + span:after {
+  -webkit-transform: scale(0.4);
+          transform: scale(0.4);
+}
+
+.checkbox {
+  --background: #fff;
+  --border: #757575;
+  --border-hover: #757575;
+  --border-active: rgba(152,22,93,0.8);
+  --tick: #fff;
+  position: relative;
+}
+
+.checkbox input,
+.checkbox svg {
+  width: 15px;
+  height: 15px;
+  display: block;
+}
+
+.checkbox input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: relative;
+  outline: none;
+  background: var(--background);
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  border-radius: 2px;
+  -webkit-transition: -webkit-box-shadow .3s;
+  transition: -webkit-box-shadow .3s;
+  transition: box-shadow .3s;
+  transition: box-shadow .3s, -webkit-box-shadow .3s;
+  -webkit-box-shadow: inset 0 0 0 var(--s, 1px) var(--b, var(--border));
+          box-shadow: inset 0 0 0 var(--s, 1px) var(--b, var(--border));
+}
+
+.checkbox input:hover {
+  --s: 2px;
+  --b: var(--border-hover);
+}
+
+.checkbox input:checked {
+  --b: var(--border-active);
+}
+
+.checkbox svg {
+  pointer-events: none;
+  fill: none;
+  stroke-width: 2px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: var(--stroke, var(--border-active));
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  -webkit-transform: scale(var(--scale, 1)) translateZ(0);
+          transform: scale(var(--scale, 1)) translateZ(0);
+}
+
+.checkbox.path input:checked {
+  --s: 2px;
+  -webkit-transition-delay: .4s;
+          transition-delay: .4s;
+}
+
+.checkbox.path input:checked + svg {
+  --a: 16.1 86.12;
+  --o: 102.22;
+}
+
+.checkbox.path svg {
+  stroke-dasharray: var(--a, 86.12);
+  stroke-dashoffset: var(--o, 86.12);
+  -webkit-transition: stroke-dasharray .6s, stroke-dashoffset .6s;
+  transition: stroke-dasharray .6s, stroke-dashoffset .6s;
+}
+
+.checkbox.bounce {
+  --stroke: var(--tick);
+}
+
+.checkbox.bounce input:checked {
+  --s: 11px;
+}
+
+.checkbox.bounce input:checked + svg {
+  -webkit-animation: bounce .4s linear forwards .2s;
+          animation: bounce .4s linear forwards .2s;
+}
+
+.checkbox.bounce svg {
+  --scale: 0;
+}
+
+@-webkit-keyframes bounce {
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes bounce {
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
 /*# sourceMappingURL=login_input.css.map */

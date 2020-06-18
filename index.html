@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="./bootstrap/css/BsMultiSelect.min.css"> -->
     <link rel="stylesheet" href="fonts-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="ionicons/css/ionicons.min.css">
     <link rel="stylesheet" type="text/css" href="./slick/slick.css">
@@ -11,17 +12,19 @@
     <link rel="stylesheet" href="./owl-carousel/owl-carousel.min.css">
     <link rel="stylesheet" href="./owl-carousel/owl-theme.min.css">
     <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="login.css"> -->
+    <link rel="stylesheet" href="login_input.css">
     <title>dashboard</title>
 </head>
 <body >
-    <div class="bg px-5 py-4">
+    <div class="bg px-4 px-md-5 py-4">
         <div class="main d-flex flex-column flex-md-row justify-content-center h-100 mx-0 mx-md-3">
 
             <!-- right side -->
-            <div class="right_side col-12 col-md-1 d-flex flex-row flex-md-column align-items-start justify-content-between justify-content-md-between align-items-md-center py-3 py-md-4 pr-3 px-md-0 mb-3 mb-md-0">
+            <div class="right_side col-12 col-md-1 d-flex flex-row flex-md-column align-items-start justify-content-between justify-content-md-between align-items-md-center py-3 pb-md-4 pr-3 pt-md-0 px-md-0 mb-3 mb-md-0">
                 <div class="d-none d-md-block ">
-                    <div class="logo d-flex align-items-center justify-content-center mb-0 mb-md-3 px-1 mx-1">
-                        <img src="./img/logo.png" alt="" class="w-100 py-3">
+                    <div class="logo d-flex align-items-center justify-content-center mb-0 mb-md-3 px-1">
+                        <img src="./img/logo.png" alt="" class="w-100 py-4">
                     </div>
                 </div>
                 <div class="w-100 d-flex justify-content-center">
@@ -193,7 +196,7 @@
             <!-- end of left side -->
 
             <!-- middle part -->
-            <div class="middle col-12 col-md-7 d-flex flex-column my-0 my-md-4 px-1 px-md-4">
+            <div class="middle bg-white col-12 col-md-7 d-flex flex-column my-0 pb-3 p-md-4 px-1">
                 <!-- search form -->
                 <div class="d-flex flex-column flex-md-row justify-content-between align-items-center px-3 px-md-2 mb-3">
                     <h1 class="d-none d-md-block my-3 my-md-0">داشبورد</h1>
@@ -203,9 +206,58 @@
                     </form>
                 </div>
                 <!-- end of search form -->
+                  <!-- invoice -->
+                  <div class="invoice row mt-0 mt-md-4 px-4">
+                    <div class="d-flex flex-wrap w-100 mb-4">
+                        <div class="col-12 col-md-4 px-2">
+                            <div class="card3 d-flex p-3 position-relative">
+                                <div class="invoice1 d-flex align-items-center justify-content-center">
+                                    <span>PL</span>
+                                </div>
+                                <div class="d-flex flex-column align-items-start justify-content-center mr-3">
+                                    <h4 class="font-weight-bold mb-1">90000 تومان</h4>
+                                    <p class="mb-0">صورتحساب اول</p>
+                                </div>
+                                <div class="position-absolute">
+                                    <i class="ion ion-information-circled text-danger"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 px-2 mt-3 mt-md-0">
+                            <div class="card3 d-flex p-3 position-relative">
+                                <div class="invoice2 d-flex align-items-center justify-content-center">
+                                    <span>SQ</span>
+                                </div>
+                                <div class="d-flex flex-column align-items-start justify-content-center mr-3">
+                                    <h4 class="font-weight-bold mb-1">20000 تومان</h4>
+                                    <p class="mb-0">صورتحساب دوم</p>
+                                </div>
+                                <div class="position-absolute">
+                                    <i class="ion ion-information-circled text-danger"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 px-2 mt-3 mt-md-0">
+                            <div class="card3 d-flex p-3 position-relative">
+                                <div class="invoice2 d-flex align-items-center justify-content-center">
+                                    <span>PL</span>
+                                </div>
+                                <div class="d-flex flex-column align-items-start justify-content-center mr-3">
+                                    <h4 class="font-weight-bold mb-1">10000 تومان</h4>
+                                    <p class="mb-0">صورتحساب سوم</p>
+                                </div>
+                                <div class="position-absolute">
+                                    <i class="ion ion-information-circled text-danger"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of invoice -->
                 <div class="d-flex flex-column flex-md-row">
                     <!-- progress bar -->
                     <div class="col-md-8 mb-3 mb-md-0">
+                        <div class="d-block d-md-none w-100 mobile_border pb-4"> </div>
                         <div class="card1 d-flex flex-column p-3 w-100">
                             <div class="title d-flex justify-content-between">
                                 <h3 class="mb-3">پیشرفت پروژه</h3>
@@ -323,7 +375,81 @@
                     </div>
                     <!-- end of statistics -->
                 </div>
-
+                <!-- forms -->
+                <div class="d-flex flex-row flex-md-column mt-4">
+                    <div class="d-block d-md-none w-100 mobile_border pb-4"> </div>
+                    <div class="col-12">
+                        <div class="form-card d-flex flex-column p-3 px-md-5">
+                            <h3 class="form-title">فرم اول</h3>
+                            <div class="custom-form-group">
+                                <i class="fa fa-envelope-o form-icon"></i>
+                                <input type="text" onfocus="this.placeholder=''" onblur="this.placeholder='فیلد اول'" placeholder='فیلد اول ' class="form-control w-100 custom-input" name="password">
+                            </div>
+                            <div class="custom-form-group">
+                                <i class="fa fa-user form-icon"></i>
+                                <input onfocus="this.placeholder=''" onblur="this.placeholder='فیلد دوم'" placeholder='فیلد دوم ' class="form-control w-100 custom-input" name="password">
+                            </div>
+                            <div class="custom-form-group line d-flex flex-column flex-md-row align-items-start w-100" >
+                                <div class="col-12 col-md-3 d-flex align-items-end justify-content-start pr-2 pl-0 h-100">
+                                    <span><i class="fa fa-calendar ml-3 pt-2"></i>روز هفته:</span>
+                                </div>
+                                <select class="col-12 col-md-9 pr-0" dir="rtl" name="day" id="multidayselect"  multiple="multiple" style="display: none;">
+                                    <option value="1">شنبه</option>
+                                    <option value="2"> یکشنبه</option>
+                                    <option value="3">دوشنبه</option>
+                                    <option value="4">سه شنبه</option>
+                                    <option value="5">چهارشنبه</option>
+                                    <option value="6">پنج شنبه</option>
+                                    <option value="7">جمعه</option>
+                                </select>
+                            </div>
+                            <div class="select_mate" data-mate-select="active" >
+                                <i class="fa fa-toggle-on form-icon"></i>
+                                <select name="" onchange="" onclick="return false;" id="multiple">
+                                    <option value=""  > انتخاب کنید...</option>
+                                    <option value=""  >فعال </option>
+                                    <option value="1">غیر فعال</option>
+                                </select>
+                                <p class="selecionado_opcion"  onclick="open_select(this)" ></p>
+                                <span onclick="open_select(this)" class="icon_select_mate" >
+                                    <svg fill="#8e8e8e" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+                                        <path d="M0-.75h24v24H0z" fill="none"/>
+                                    </svg>
+                                </span>
+                                <div class="cont_list_select_mate">
+                                    <ul class="cont_select_int">  </ul> 
+                                </div>
+                            </div>  
+                            <div class="custom-form-group">
+                                <label class="radio">
+                                    <input type="radio" name="r" value="1" checked>
+                                    <span>زن</span>
+                                </label>
+                                <label class="radio">
+                                    <input type="radio" name="r" value="2">
+                                    <span>مرد</span>
+                                </label>
+                            </div>
+                            <div class="custom-form-group">
+                                <textarea type="text" rows="5" class="custom-field p-2" onfocus="this.placeholder=''" onblur="this.placeholder='فیلد سوم'" placeholder='فیلد سوم '></textarea>
+                            </div>  
+                            <div class="custom-form-group d-flex">
+                                <div class="grid d-flex align-items-start mx-2">
+                                    <label class="checkbox bounce">
+                                        <input type="checkbox" checked>
+                                        <svg viewBox="0 0 21 21">
+                                            <polyline points="5 10.75 8.5 14.25 16 6"></polyline>
+                                        </svg>
+                                    </label>
+                                    <span class="mr-2">موافقم</span> 
+                                </div>
+                            </div>                    
+                            <button type="submit" value="" class="btn form-button">ثبت</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of forms -->
                 <!-- chart -->
                 <div class="row mt-4 px-4">
                     <div class="d-block d-md-none w-100 mobile_border pb-4"> </div>
@@ -357,60 +483,6 @@
                     </div>
                 </div>
                 <!-- end of chart -->
-
-                <!-- invoice -->
-                <div class="invoice row mt-4 px-4">
-                    <div class="d-block d-md-none w-100 mobile_border pb-4"> </div>
-                    <div class="title d-flex justify-content-between w-100 mb-3">
-                        <h3 class="mb-2">صورتحساب</h3>
-                        <i class="ion ion-information-circled"></i>
-                    </div>
-                    <div class="d-flex flex-wrap w-100 mb-4">
-                        <div class="col-12 col-md-4 ">
-                            <div class="card3 d-flex p-3 position-relative">
-                                <div class="invoice1 d-flex align-items-center justify-content-center">
-                                    <span>PL</span>
-                                </div>
-                                <div class="d-flex flex-column align-items-start justify-content-center mr-3">
-                                    <h4 class="font-weight-bold mb-1">90000 تومان</h4>
-                                    <p class="mb-0">صورتحساب اول</p>
-                                </div>
-                                <div class="position-absolute">
-                                    <i class="ion ion-information-circled text-danger"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-4 mt-3 mt-md-0">
-                            <div class="card3 d-flex p-3 position-relative">
-                                <div class="invoice2 d-flex align-items-center justify-content-center">
-                                    <span>SQ</span>
-                                </div>
-                                <div class="d-flex flex-column align-items-start justify-content-center mr-3">
-                                    <h4 class="font-weight-bold mb-1">20000 تومان</h4>
-                                    <p class="mb-0">صورتحساب دوم</p>
-                                </div>
-                                <div class="position-absolute">
-                                    <i class="ion ion-information-circled text-danger"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-4 mt-3 mt-md-0">
-                            <div class="card3 d-flex p-3 position-relative">
-                                <div class="invoice2 d-flex align-items-center justify-content-center">
-                                    <span>PL</span>
-                                </div>
-                                <div class="d-flex flex-column align-items-start justify-content-center mr-3">
-                                    <h4 class="font-weight-bold mb-1">10000 تومان</h4>
-                                    <p class="mb-0">صورتحساب سوم</p>
-                                </div>
-                                <div class="position-absolute">
-                                    <i class="ion ion-information-circled text-danger"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- end of invoice -->
             </div>
             <!-- end of middle -->
             
@@ -456,31 +528,31 @@
                                     <p class="text-right font-weight-bold mb-4">لورم ایپسوم یا طرح‌نمای: Lorem ipsum) به متنی آزمایشی و بی‌معنی در صنعت چاپ</p>
                                     <span class="font-weight-bold mb-2">7 اردیبهشت 99</span>
                                     <span class="font-weight-bold mb-3">13:30 عصر</span>
-                                    <div class="d-flex align-items-center text-danger">
-                                        <i class="ion ion-stats-bars ml-2"></i>
-                                        <h5 class="mb-0 text-danger">توضیحات</h4>
-                                    </div>
-                                </div>
-                            <!-- </div> -->
-                            <!-- <div class="col-12 col-md-6"> -->
-                                <div class="d-flex flex-column px-2 py-3 card1 align-items-start my-3" dir="rtl">
-                                    <p class="text-right font-weight-bold mb-4">لورم ایپسوم یا طرح‌نمای: Lorem ipsum) به متنی آزمایشی و بی‌معنی در صنعت چاپ</p>
-                                    <span class="font-weight-bold mb-2">7 اردیبهشت 99</span>
-                                    <span class="font-weight-bold mb-3">13:30 عصر</span>
-                                    <div class="d-flex align-items-center text-info">
-                                        <i class="ion ion-progress-bar ml-2"></i>
-                                        <h5 class="mb-0 text-info">توضیحات</h4>
-                                    </div>
-                                </div>
-                            <!-- </div> -->
-                            <!-- <div class="col-12 col-md-6"> -->
-                                <div class="d-flex flex-column px-2 py-3 card1 align-items-start my-3" dir="rtl">
-                                    <p class="text-right font-weight-bold mb-4">لورم ایپسوم یا طرح‌نمای: Lorem ipsum) به متنی آزمایشی و بی‌معنی در صنعت چاپ</p>
-                                    <span class="font-weight-bold mb-2">7 اردیبهشت 99</span>
-                                    <span class="font-weight-bold mb-3">13:30 عصر</span>
-                                    <div class="d-flex align-items-center text-info">
+                                    <div class="d-flex align-items-center text-pink">
                                         <i class="fa fa-pie-chart ml-2"></i>
-                                        <h5 class="mb-0 text-info">توضیحات</h4>
+                                        <h5 class="mb-0 text-pink">توضیحات</h4>
+                                    </div>
+                                </div>
+                            <!-- </div> -->
+                            <!-- <div class="col-12 col-md-6"> -->
+                                <div class="d-flex flex-column px-2 py-3 card1 align-items-start my-3" dir="rtl">
+                                    <p class="text-right font-weight-bold mb-4">لورم ایپسوم یا طرح‌نمای: Lorem ipsum) به متنی آزمایشی و بی‌معنی در صنعت چاپ</p>
+                                    <span class="font-weight-bold mb-2">7 اردیبهشت 99</span>
+                                    <span class="font-weight-bold mb-3">13:30 عصر</span>
+                                    <div class="d-flex align-items-center text-pink">
+                                        <i class="fa fa-pie-chart ml-2"></i>
+                                        <h5 class="mb-0 text-pink">توضیحات</h4>
+                                    </div>
+                                </div>
+                            <!-- </div> -->
+                            <!-- <div class="col-12 col-md-6"> -->
+                                <div class="d-flex flex-column px-2 py-3 card1 align-items-start my-3" dir="rtl">
+                                    <p class="text-right font-weight-bold mb-4">لورم ایپسوم یا طرح‌نمای: Lorem ipsum) به متنی آزمایشی و بی‌معنی در صنعت چاپ</p>
+                                    <span class="font-weight-bold mb-2">7 اردیبهشت 99</span>
+                                    <span class="font-weight-bold mb-3">13:30 عصر</span>
+                                    <div class="d-flex align-items-center text-pink">
+                                        <i class="fa fa-pie-chart ml-2"></i>
+                                        <h5 class="mb-0 text-pink">توضیحات</h4>
                                     </div>
                                 </div>
                             <!-- </div> -->
@@ -548,89 +620,93 @@
     <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
     <script src="./bootstrap/js/popper.min.js"></script>
     <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script src="./bootstrap/js/BsMultiSelect.min.js"></script>
     <script src="./bootstrap/js/Chart.min.js"></script>
     <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script type="text/javascript">
+
+$("#multidayselect").bsMultiSelect();
+
          $(document).on('ready', function() {
-      $(".vertical-center-4").slick({
-        dots: true,
-        vertical: true,
-        centerMode: true,
-        slidesToShow: 4,
-        slidesToScroll: 2
-      });
-      $(".vertical-center-3").slick({
-        dots: true,
-        vertical: true,
-        prevArrow: false,
-        nextArrow: false,
-        slidesToShow: 3,
-        slidesToScroll: 3
-      });
-      $(".vertical-center-2").slick({
-        dots: true,
-        vertical: true,
-        centerMode: true,
-        slidesToShow: 2,
-        slidesToScroll: 2
-      });
-      $(".vertical-center").slick({
-        dots: true,
-        vertical: true,
-        centerMode: true,
-        prevArrow: false,
-        nextArrow: false,
-      });
-      $(".vertical").slick({
-        dots: true,
-        vertical: true,
-        slidesToShow: 3,
-        slidesToScroll: 3
-      });
-      $(".regular").slick({
-        dots: true,
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-      });
-      $(".center").slick({
-        dots: true,
-        infinite: true,
-        centerMode: true,
-        slidesToShow: 2,
-        slidesToScroll: 2,
-        prevArrow: false,
-        nextArrow: false,
-        responsive: [
-                    {
-                        breakpoint: 768,
-                        settings: {
-                            arrows: false,
-                            centerMode: false,
-                            slidesToShow: 1
-                        }
-                    },
-                    {
-                        breakpoint: 480,
-                        settings: {
-                            arrows: false,
-                            centerMode: false,
-                            slidesToShow: 1
-                        }
-                    }
-                ]
-      });
-      $(".variable").slick({
-        dots: true,
-        infinite: true,
-        variableWidth: true
-      });
-      $(".lazy").slick({
+            $(".vertical-center-4").slick({
+                dots: true,
+                vertical: true,
+                centerMode: true,
+                slidesToShow: 4,
+                slidesToScroll: 2
+            });
+            $(".vertical-center-3").slick({
+                dots: true,
+                vertical: true,
+                prevArrow: false,
+                nextArrow: false,
+                slidesToShow: 3,
+                slidesToScroll: 3
+            });
+            $(".vertical-center-2").slick({
+                dots: true,
+                vertical: true,
+                centerMode: true,
+                slidesToShow: 2,
+                slidesToScroll: 2
+            });
+            $(".vertical-center").slick({
+                dots: true,
+                vertical: true,
+                centerMode: true,
+                prevArrow: false,
+                nextArrow: false,
+            });
+            $(".vertical").slick({
+                dots: true,
+                vertical: true,
+                slidesToShow: 3,
+                slidesToScroll: 3
+            });
+            $(".regular").slick({
+                dots: true,
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            });
+            $(".center").slick({
+                dots: true,
+                infinite: true,
+                centerMode: true,
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                prevArrow: false,
+                nextArrow: false,
+                responsive: [
+                            {
+                                breakpoint: 768,
+                                settings: {
+                                    arrows: false,
+                                    centerMode: false,
+                                    slidesToShow: 1
+                                }
+                            },
+                            {
+                                breakpoint: 480,
+                                settings: {
+                                    arrows: false,
+                                    centerMode: false,
+                                    slidesToShow: 1
+                                }
+                            }
+                        ]
+            });
+            $(".variable").slick({
+                dots: true,
+                infinite: true,
+                variableWidth: true
+            });
+            $(".lazy").slick({
         lazyLoad: 'ondemand', // ondemand progressive anticipated
         infinite: true
       });
-    });
+          });
     // owl carowsel
     $(document).ready(function(){
 
@@ -691,6 +767,119 @@
                 }
             }
         });
+
+        // select
+        window.onload = function(){
+            crear_select();
+            }
+
+            function isMobileDevice() {
+                return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+            };
+
+            
+            var li = new Array();
+            function crear_select(){
+            var div_cont_select = document.querySelectorAll("[data-mate-select='active']");
+            var select_ = '';
+            for (var e = 0; e < div_cont_select.length; e++) {
+            div_cont_select[e].setAttribute('data-indx-select',e);
+            div_cont_select[e].setAttribute('data-selec-open','false');
+            var ul_cont = document.querySelectorAll("[data-indx-select='"+e+"'] > .cont_list_select_mate > ul");
+            select_ = document.querySelectorAll("[data-indx-select='"+e+"'] >select")[0];
+            if (isMobileDevice()) { 
+            select_.addEventListener('change', function () {
+            _select_option(select_.selectedIndex,e);
+            });
+            }
+            var select_optiones = select_.options;
+            document.querySelectorAll("[data-indx-select='"+e+"']  > .selecionado_opcion ")[0].setAttribute('data-n-select',e);
+            document.querySelectorAll("[data-indx-select='"+e+"']  > .icon_select_mate ")[0].setAttribute('data-n-select',e);
+            for (var i = 0; i < select_optiones.length; i++) {
+            li[i] = document.createElement('li');
+            if (select_optiones[i].selected == true || select_.value == select_optiones[i].innerHTML ) {
+            li[i].className = 'active';
+            document.querySelector("[data-indx-select='"+e+"']  > .selecionado_opcion ").innerHTML = select_optiones[i].innerHTML;
+            };
+            li[i].setAttribute('data-index',i);
+            li[i].setAttribute('data-selec-index',e);
+            // funcion click al selecionar 
+            li[i].addEventListener( 'click', function(){  _select_option(this.getAttribute('data-index'),this.getAttribute('data-selec-index')); });
+
+            li[i].innerHTML = select_optiones[i].innerHTML;
+            ul_cont[0].appendChild(li[i]);
+
+                }; // Fin For select_optiones
+            }; // fin for divs_cont_select
+            } // Fin Function 
+
+
+
+            var cont_slc = 0;
+            function open_select(idx){
+            var idx1 =  idx.getAttribute('data-n-select');
+            var ul_cont_li = document.querySelectorAll("[data-indx-select='"+idx1+"'] .cont_select_int > li");
+            var hg = 0;
+            var slect_open = document.querySelectorAll("[data-indx-select='"+idx1+"']")[0].getAttribute('data-selec-open');
+            var slect_element_open = document.querySelectorAll("[data-indx-select='"+idx1+"'] select")[0];
+            if (isMobileDevice()) { 
+            if (window.document.createEvent) { // All
+            var evt = window.document.createEvent("MouseEvents");
+            evt.initMouseEvent("mousedown", false, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
+                slect_element_open.dispatchEvent(evt);
+            } else if (slect_element_open.fireEvent) { // IE
+            slect_element_open.fireEvent("onmousedown");
+            }else {
+            slect_element_open.click();
+            }
+            }else {
+
+            
+            for (var i = 0; i < ul_cont_li.length; i++) {
+            hg += ul_cont_li[i].offsetHeight;
+            }; 
+            if (slect_open == 'false') {  
+            document.querySelectorAll("[data-indx-select='"+idx1+"']")[0].setAttribute('data-selec-open','true');
+            document.querySelectorAll("[data-indx-select='"+idx1+"'] > .cont_list_select_mate > ul")[0].style.height = hg+"px";
+            document.querySelectorAll("[data-indx-select='"+idx1+"'] > .icon_select_mate")[0].style.transform = 'rotate(180deg)';
+            }else{
+            document.querySelectorAll("[data-indx-select='"+idx1+"']")[0].setAttribute('data-selec-open','false');
+            document.querySelectorAll("[data-indx-select='"+idx1+"'] > .icon_select_mate")[0].style.transform = 'rotate(0deg)';
+            document.querySelectorAll("[data-indx-select='"+idx1+"'] > .cont_list_select_mate > ul")[0].style.height = "0px";
+            }
+            }
+
+            } // fin function open_select
+
+            function salir_select(indx){
+            var select_ = document.querySelectorAll("[data-indx-select='"+indx+"'] > select")[0];
+            document.querySelectorAll("[data-indx-select='"+indx+"'] > .cont_list_select_mate > ul")[0].style.height = "0px";
+            document.querySelector("[data-indx-select='"+indx+"'] > .icon_select_mate").style.transform = 'rotate(0deg)';
+            document.querySelectorAll("[data-indx-select='"+indx+"']")[0].setAttribute('data-selec-open','false');
+            }
+
+
+            function _select_option(indx,selc){
+            if (isMobileDevice()) { 
+            selc = selc -1;
+            }
+                var select_ = document.querySelectorAll("[data-indx-select='"+selc+"'] > select")[0];
+
+            var li_s = document.querySelectorAll("[data-indx-select='"+selc+"'] .cont_select_int > li");
+            var p_act = document.querySelectorAll("[data-indx-select='"+selc+"'] > .selecionado_opcion")[0].innerHTML = li_s[indx].innerHTML;
+            var select_optiones = document.querySelectorAll("[data-indx-select='"+selc+"'] > select > option");
+            for (var i = 0; i < li_s.length; i++) {
+            if (li_s[i].className == 'active') {
+            li_s[i].className = '';
+            };
+            li_s[indx].className = 'active';
+
+            };
+            select_optiones[indx].selected = true;
+            select_.selectedIndex = indx;
+            select_.onchange();
+            salir_select(selc); 
+            }
     </script>
 </body>
 </html>
