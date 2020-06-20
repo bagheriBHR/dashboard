@@ -1,12 +1,16 @@
 
+@import url('fonts/font-face.css');
+* , a{
+    font-family: 'Vazir';
+}
 body {
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  font-family: "Roboto", sans-serif;
-  background-color: #5356ad;
+  // background-color: #5356ad;
+  background-color: #98165d;
   overflow: hidden;
 }
 
@@ -30,7 +34,8 @@ body {
   width: 600px;
   margin: 30px auto 0;
   height: 320px;
-  background-color: #999ede;
+  // background-color: #999ede;
+  background-color: #cc5697;
   top: 50%;
   margin-top: -160px;
   -moz-transition: all 0.5s;
@@ -51,7 +56,8 @@ body {
   position: absolute;
   left: 152px;
   top: 50px;
-  background-color: #9297e0;
+  // background-color: #9297e0;
+  background-color: #cf4591;
   transform: rotateX(52deg) rotateY(15deg) rotateZ(-38deg);
   width: 300px;
   height: 285px;
@@ -61,7 +67,8 @@ body {
   transition: all 0.5s;
 }
 .container .box:after {
-  background-color: #a5aae4;
+  // background-color: #a5aae4;
+  background-color: #cc689f;
   top: -10px;
   left: 80px;
   width: 320px;
@@ -152,7 +159,7 @@ body {
   position: absolute;
   left: 160px;
   top: -50px;
-  color: #5356ad;
+  color: #98165d;
   font-size: 130px;
   opacity: 0;
   -moz-transition: all 0.5s;
@@ -220,7 +227,7 @@ body {
   position: absolute;
   left: 51px;
   top: 5px;
-  color: #5356ad;
+  color: #98165d;
   font-size: 130px;
   opacity: 1;
 }
@@ -239,12 +246,3 @@ body {
   opacity: 0;
 }
 
-.rabbit {
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  z-index: 3;
-  fill: #fff;
-}
